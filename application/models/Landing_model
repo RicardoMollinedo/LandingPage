@@ -1,0 +1,54 @@
+<?php
+
+
+class Liturgical_model extends CI_model
+{
+	function __construct()
+	{
+		parent::__construct();
+	}
+	    public function guardar ($param)
+ 		{
+  		$campos = array(
+  		 'Nombre_Tiempo' =>$param['timename'],
+        'Introduccion' =>$param['timeintro'],
+        'Instruccion' =>$param['timeinstru'],
+        'Normas' =>$param['timenorm']
+  	     );
+  		$this->db->insert('tiemposliturgicos',$campos);
+
+
+ 		}
+ 		public function get_liturgic()
+ 		{
+ 		 $ltall=$this->db->get('tiemposliturgicos');
+         return $ltall;
+
+ 		}
+
+ 		public function get_liturgic_by($param)
+ 		{
+         $every_by=$this->db->query("Select * from tiemposliturgicos where idTiempoLiturgico = '".$param."'");			
+ 		 return $every_by; 
+ 		}
+
+    public function liturgic_updater($uparray_lt,$id)
+    {
+  
+       $this->db->set('Nombre_Tiempo',$uparray_lt['timename']);
+       $this->db->set('Introduccion',$uparray_lt['timeintro']);
+       $this->db->set('Instruccion',$uparray_lt['timeinstru']);
+       $this->db->set('Normas',$uparray_lt['timenorm']);
+       $this->db->where('idTiempoLiturgico',$id);
+       $this->db->update('tiemposliturgicos');
+    }
+     
+   public function liturgic_eraser($id)
+   {
+       $this->db->query("Delete from tiemposliturgicos where idTiempoLiturgico= ".$id);
+
+   }
+
+}
+ 
+ 
