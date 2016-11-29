@@ -183,6 +183,10 @@
                                     
                                 </li>
                                 <li class="smoth-scroll">
+                                    <a data-hover="Hoja Dominical" href="#hoja_dominical">Hoja Dominical</a>
+
+                                </li>
+                                <li class="smoth-scroll">
                                     <a data-hover="Log In" href="http://calendario.iglesia.org.bo/index.php/profile/login">Log In</a>
                                 </li>
                             </ul>
@@ -351,24 +355,8 @@
             </div>
         </section>
         <!-- ====ABOUT US==== -->
-        
 
-
-         <section id="contact" class="map-area">
-            <div class="contact_google_map">
-                
-
-                <iframe width="1350" height="1000" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/streetview?location=-16.4951657%2C-68.136699&key=AIzaSyBY6Rk7jiJ8X_efINdPCNn_H4IcN6T97G8" allowfullscreen></iframe>
-            </div>
-            
-        </section>
         <!-- ====START PROJECT AREA==== -->
-
-
-
-
-
-
 
         <section class="project_area section-padding">
             <div class="container">
@@ -422,7 +410,7 @@
                             <h2 class="secHd text-center">CALENDARIO </h2>
                         </div>
                     </div>                                                
-                </div>
+        </div>
 <section class="skill_and_video">
             <div class="video_area">
                 <div class="video_control">
@@ -1153,7 +1141,7 @@ console.log(calendar);
 
 <section class="body2" id="book2"></section>
 
-<div class='book' id="booklet">  
+<div class='book' id="booklet">
  <?php foreach($reader as $fields):  ?> 
   <div id='page-1' class='page no-anim'>  
   
@@ -1186,7 +1174,42 @@ console.log(calendar);
   </div><!-- .page -->
    <?php endforeach; ?>
 
-</div><<!--fin libro -->
+</div>
+        <!--fin libro -->
+
+        <!-- ====INICIO HOJA DOMINICAL==== -->
+
+        <div class="row" id="hoja_dominical">
+            <div class="col-xs-12">
+                <div class="section_title mb80">
+                    <br>
+                    <h5 class="smallHd text-center">ENTERATE DE LA ÚLTIMA:</h5>
+                    <h2 class="secHd text-center">HOJA DOMINICAL </h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12" ALIGN="CENTER">
+                <iframe src="<?php echo base_url()?>assets/Hoja_dominical.pdf" width="50%" height="450px"></iframe>
+            </div>
+        </div>
+
+        <!-- ====FIN HOJA DOMINICAL==== -->
+
+
+
+        <!-- ====START GOOGLE API AREA==== -->
+        <br>
+
+        <section id="contact" class="map-area">
+            <div class="contact_google_map" align="center">
+                <iframe width="1250" height="768" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/streetview?location=-16.4951657%2C-68.136699&key=AIzaSyBY6Rk7jiJ8X_efINdPCNn_H4IcN6T97G8" allowfullscreen></iframe>
+            </div>
+
+        </section>
+
+        <!-- ====FINISH GOOGLE API AREA==== -->
+
 
         <!-- ====END BLOG TABLE==== -->
         
@@ -1210,7 +1233,7 @@ console.log(calendar);
                 <div class="container">
                     <div class="ft_area">
                         <div class="row">
-                            <div class="col-md-7 fix_p_l">
+                            <div class="col-md-9 fix_p_l">
                                 <nav>
                                     <ul class="ft_bottom">      
 
@@ -1219,6 +1242,7 @@ console.log(calendar);
                                         <li><a href="#services">¿Que Ofrecemos?</a></li>
                                         <li><a href="#book2"> Tiempos Liturgicos </a></li>
                                         <li><a href="#calendario">Calendario Liturgico</a></li>
+                                        <li><a href="#hoja_dominical">Hoja Dominical</a></li>
                                        
                                         
                                     </ul>
@@ -1226,7 +1250,9 @@ console.log(calendar);
                             </div>
                             <div class="col-md-5 fix_p">
                                 <div class="ft_paragraph">
-                                    <p>©2016 Design by <a href="https://www.behance.net/googoling">Faridul Haque</a> and Develop by <a href="http://themeebit.com/">ThemeeBiT</a>.</p>   
+     <!--
+                                    <p>©2016 Design by <a href="https://www.behance.net/googoling">Faridul Haque</a> and Develop by <a href="http://themeebit.com/">ThemeeBiT</a>.</p>
+     -->
                                 </div>
                             </div>  
                         </div>
